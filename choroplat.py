@@ -13,6 +13,8 @@ listas = bigstring.split("\n")
 for i in listas:
     temp = i.strip().split(" ")
     if len(temp) > 1:
+        if temp[1]=='United':
+            temp[1]='USA'
         if temp[1] != "can't":
             data.append([temp[1],int(temp[0])])
 
