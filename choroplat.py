@@ -18,12 +18,7 @@ for i in listas:
         if temp[1] != "can't":
             data.append([temp[1],int(temp[0])])
 
-print(data)
-
-
 df= pd.DataFrame(data, columns=['Country','Tries'])
-print(df)
-
 
 fig = px.choropleth(df,
                    locations="Country",
